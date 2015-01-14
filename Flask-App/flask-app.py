@@ -14,5 +14,9 @@ def goodbye():
 def tree():
   return 'oak'
 
+@app.route('/thing')
+def thing():
+  return 'a thing'
+
 if __name__ == '__main__':
   app.run(host='0.0.0.0', debug=True)
